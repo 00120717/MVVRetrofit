@@ -32,8 +32,9 @@ class MainActivity : AppCompatActivity() {
             adapter.updateList(it)
         })
         btn_repo.setOnClickListener {
-            //viewModel.retrieveRepo(et_repo.text.toString())
+            viewModel.retrofitRepo(et_repo.text.toString())
         }
     }
 
 }
+
